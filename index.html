@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="icon" type="image/x-icon" href="kke.png">
+    <title>Portfolio</title>
+</head>
+<body>
+  
+   <div class="main">
+    <header class="header">
+      
+        <a href="" class="logo"> kailash.</a>
+        <nav class="navbar">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Education</a>
+            <a href="">Skills</a>
+            <a href="">Contact</a>
+            <!-- <a id="Theme" href="" onclick="darkmode()">Theme</a> -->
+
+        </nav>
+        <!-- <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div> -->
+    </header>
+   
+     <section class="home">
+     
+        <div class="homecontent">
+            
+            <h3>Hello, It's Me</h3>
+            <h1>Kailash Kumar</h1>
+            <h3>And I'm a <span id="element"></span></h3>
+            <p>Glad to see you Here...! </p>
+            <div class="homesci">
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+              <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFdXXHRzXGKfZtvvFNVSGtDdmTcqvMKZCGWXtjqLVsLpLGxBnqxzSdfzdsFVVLwnjSKZlW"><i class='bx bx-mail-send' ></i></a>
+            </div>
+            <a href="" onclick="downlodFile()" class="morebtn">Download Resume</a>
+        </div>
+        <div class="mypoto">
+      
+          <img src="kke.png" alt="">
+        </div>
+    </section>
+   <section class="about reveal" >
+    <div class="abtimg">
+      <img src="kke.png" alt="kk">
+    </div>
+    <div class="abttext reveal">
+      <h2>About<span>ME</span></h2>
+      <hr>
+          <div class="box1 reveal">
+            <div class="box2 reveal">
+              
+              <p>Hi, This is Kailash Kumar P. I'm currently a Student pursuing my B.E degree in <strong>Information Science and Engineering</strong> at CIT Bangalore,India.
+                Aside from academics, I'm an active member of various clubs and organizations related to computer science on campus. Being involved in these activities has given me opportunities to interact with like-minded peers, participate in hackathons and coding competitions, and attend workshops and seminars to further enhance my skills
+                In the future, I hope to specialize in a specific area of computer science, whether it be artificial intelligence, cybersecurity, software development, or something else that captures my interest. My ultimate goal is to contribute to innovative projects and make a positive impact on society through technology.</p>
+            </div>
+          </div>
+
+   </section>
+   <div class="myed reveal">
+    <img src="graduation.gif" alt="">
+    <h2><span>My </span>Education</h2>
+    <hr>
+  </div>
+   
+   <div class="container">
+    <div class="box reveal">
+      <span></span>
+      <div class="content reveal">
+        <h2>B.E Information Tech.</h2>
+        <p>Pursuing my B.E degree in Information Science and Engineering at Cambridge Institute of Technology Bangalore,India.</p>
+        
+      </div>
+    </div>
+    <div class="box reveal">
+      <span></span>
+      <div class="content reveal">
+        <h2>12<sup>th</sup>Boards.</h2>
+        <p>Completed my 12<sup>th</sup> Boards at Kite PU College,Bangalore India.under Department of pre-university Education karnataka.
+        With an overall percentage of <strong>87%</strong> in the stream of Science.</p>
+       
+      </div>
+    </div>
+    <div class="box reveal">
+      <span></span>
+      <div class="content reveal">
+        <h2>Certifications and Achievements.</h2>
+        <li>MLSA at Microsoft</li>
+        <li>
+          Basics of JAVA-Coding Ninja
+        </li>
+        <li>DSA-Coding Ninja</li>
+        <li>Advanced training in DSA-WallMart</li>
+        <li></li>
+        <li></li>
+      </div>
+    </div>
+   
+   </div>
+   
+<div class="footer">
+    <div class="footerimage">
+    <a href="www.linkedin.com"><i class='bx bxl-linkedin-square'></i></a>
+    <a href="www.instagram.com"><i class='bx bxl-instagram' ></i></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFdXXHRzXGKfZtvvFNVSGtDdmTcqvMKZCGWXtjqLVsLpLGxBnqxzSdfzdsFVVLwnjSKZlW"><i class='bx bx-mail-send' ></i></a>
+   </div>
+   <div class="footercontent">
+    <p>Copyright © 2022 Kailash. All rights reserved.</p>
+    </div>
+</div>
+</div>
+
+ 
+  <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
+
+  <!-- Setup and start animation! -->
+  <script>
+    
+
+
+    var typed = new Typed('#element', {
+      strings: ['Student','Web Developer','Android Dev','MLSA at Microsoft','Problem Solver'],
+      typeSpeed:100,
+      backSpeed:100,
+      backDelay:1000,
+      loop:true
+   
+    });
+
+    function reveal() {
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 100;
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", reveal);
+    }
+
+// To check the scroll position on page load
+reveal();  
+</script>
+</body>
+</html>
