@@ -205,7 +205,8 @@ hr{
 }
 
 .mypoto img{
-  background-image: url(back.svg);
+  background-image: url(J5A.gif);
+  border-radius:50%;
   background-size: cover;
   background-size: 351px;
     position: relative;
