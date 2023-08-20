@@ -58,11 +58,13 @@ body::-webkit-scrollbar-thumb{
     transition: .4s;
     opacity: 0;
     animation: slideTop 1s ease forwards;
+   
 
 }
 .navbar a:hover{
-    color:hsl(345deg 100% 47%);
-
+   background-color:hsl(345, 97%, 39%);
+    border: 1px;
+    border-radius: 5px; 
 }
 
 .home{
@@ -158,10 +160,12 @@ body::-webkit-scrollbar-thumb{
     
 }
 .about{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
     align-items: center;
     gap:1.5rem;
+    
+    background: radial-gradient(#000,#16161f);
 }
 .abtimg img{
     height: 250px;
@@ -173,10 +177,7 @@ body::-webkit-scrollbar-thumb{
    box-shadow: -5px 0px 7px;
   
 }
-.abttext{
-    margin-left: -230px;
-    max-width: 740px;
-}
+
 .abttext h2{
     font-size: 52px;
 }
@@ -192,35 +193,31 @@ hr{
     width: 120px;
     height: 5px;
     border-radius: 3px;
-     background: linear-gradient(to right, purple 0%, red 100%);
+    background: linear-gradient(to right, purple 0%, red 100%);
     
 }
 .box2{
   position: absolute;
-  background:rgb(44, 44, 63);
   padding:10px;
   border-radius: 8px;
-  backdrop-filter: blur(10px);
-  z-index: 1;
 }
 
-.mypoto img{
-  background-image: url(J5A.gif);
-  border-radius:50%;
+.homephoto img{
+  border-radius: 100%;
   background-size: cover;
   background-size: 351px;
-    position: relative;
-    height: 360px;
-    /* border-radius: 50%; */
-    /* box-shadow: 0 0 20px cyan,0 0 15px cyan; */
-    /* animation: slideLeft 6s ease backwards; */
-    animation:updown 3s ease-in-out infinite;
-    
+  position: absolute;
+  height: 360px;
+  left: 780px;
+  top: 200px;
+  animation:updown 3s ease-in-out infinite;
+  
+}
+svg{
+  height: 500px;
 }
 @keyframes updown{
-    /* 0%{
-        transform: translateY(0px);
-    } */
+    
     50%{
         transform: translateY(-7px);
     }
@@ -258,12 +255,14 @@ hr{
         opacity: 1;
     }
 }
+
 .education{
     display: flex;
     justify-content: center;
     gap:5rem;
     margin-top: 150px;
     margin-bottom: 130px;
+    background-color: cyan;
 }
 
 .plus2{
@@ -292,6 +291,7 @@ hr{
     justify-content: center;
     align-items: center;
     margin-bottom: 65px;
+    
 }
 .myed h2{
     font-size: 52px;
@@ -587,10 +587,10 @@ hr{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 96px;
+  justify-content: space-evenly;
+  height: 76px;
   background-color: black;
-  gap: 1rem;
+  gap: .1rem;
   border-top:2px solid cyan;
   margin:0px 100px 0px 100px;
 }
@@ -603,6 +603,57 @@ hr{
   display: flex;
   text-decoration: none;
   font-size: 34px;
+  width: 100%;
+
+}
+
+@media only screen and (max-width:412px) {
+ .about{
+  display: flex;
+  flex-direction: column;
+  left: 7%;
+  width: 170%;
+  border-radius: 20px;
+  
+ }
+ .abtimg{
+   margin-left: -70px;
+ }
+ .homephoto{
+  position: relative;
+  right: 700px;
+  top: -295px;
+ }
+.box{
+  align-items: center;
+  position: relative;
+  left: 220px;
+  scale:1.6;
+ top: 190px;
+}
+.container{
+  gap: 28rem;
+ margin-bottom: 405px;
+}
+.footer{
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  left: 20%;
+  margin-bottom: 20px;
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+  top:80px;
+  background-color: lightcoral;
+  /* display: none; */
+  
+}
+.logo{
+  scale: 1.5;
+}
+
 
 }
 
