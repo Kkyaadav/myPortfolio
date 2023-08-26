@@ -18,6 +18,7 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background:linear-gradient(rgb(232, 97, 7),white,green);
   border-radius: 50px;
+ 
 }
 .header{
     position: fixed;
@@ -64,9 +65,12 @@ body::-webkit-scrollbar-thumb{
 }
 .navbar a:hover{
  
-   background-color:#673ab7;;
+   /* background-color:#673ab7;;
     border: 1px;
-    border-radius: 5px; 
+    border-radius: 5px;  */
+    text-decoration: underline;
+    color: #ffbc00;
+
    
 }
 
@@ -136,6 +140,7 @@ body::-webkit-scrollbar-thumb{
     font-weight: 600;
     padding: 12px 28px;
     animation: slideLeft 1s ease;
+    transition: .3s;
 }
 .morebtn:hover{
     box-shadow: 0 0 5px cyan,0 0 25px cyan,
@@ -166,7 +171,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     /* grid-template-columns: repeat(2,1fr); */
     align-items: center;
-    
+
     gap:1.5rem;
     
 }
@@ -319,7 +324,7 @@ svg{
 .myskill{
     display: flex;
     gap:2rem;
-    top:20px;
+    top:100px;
     left:100px;
     max-width: 550px;
     justify-content: center;
@@ -604,8 +609,12 @@ svg{
   border-radius: 20px;
   
  }
- .abtimg{
-   margin-left: -100px;
+
+ .abtimg img{
+  margin-left: -80px;
+  height: 300px;
+  width: 1200px;
+  object-fit: cover;
  }
  .homephoto img{
   position: relative;
@@ -626,18 +635,39 @@ svg{
   scale: 1.2;
 }
 
+
 .navbar{
   display: flex;
   flex-direction: column;
   top:80px;
-  background-color: lightcoral;
-  /* display: none; */
-  
+  display: none;
 }
 /* .logo{
   scale: 1.5;
 } */
+ .footer{
+  width: 751px;
+ }
+ .contact{
+  margin-top: 70px;
+  width: 749px;
+ }
+ .conimage img{
+  height: 400px !important;
+}
+.skills{
+  /* border: 3px solid red; */
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width:700px !important;
+  margin-left: -35px;
+  height: 800px !important;
 
+}
+button{
+  display: block;
+}
 
 }
 
@@ -651,6 +681,7 @@ top: 45px;
  flex-direction: row;
  height: 600px;
  overflow: hidden;
+
 }
 .sbox{
   display: flex;
@@ -663,7 +694,8 @@ top: 45px;
   flex-direction: column;
   height: 200px;
   width: 180px;
-  border: 1px solid cyan;
+  border: 1px solid;
+  border-color: purple red yellow coral;
   display: flex;
   justify-content:space-evenly;
   align-items: center;
@@ -672,13 +704,13 @@ top: 45px;
   border-radius: 8px;
   flex-wrap:wrap;
   padding: 10px;
-  filter:grayscale(90%);
+  filter:grayscale(0%);
 }
 .skills img{
   height: 100px;
 }
 .skills .box:hover{
-  filter:grayscale(0%);
+  filter:grayscale(100%);
   transition: 1s ease-in-out;
   cursor: pointer;
 }
@@ -699,7 +731,7 @@ top: 45px;
   flex-direction: column;
   /* border: 1px solid purple; */
   height: 400px;
-  width: 400px;
+  width: auto;
   justify-content: space-around;
   padding:0px;
   gap: .6rem;
@@ -713,6 +745,7 @@ top: 45px;
   color: black;
   font-size: 20px;
   padding: 20px;
+  box-shadow: -3px 5px 3px rgb(188, 186, 186);
   
 }
 .cform input{
@@ -728,16 +761,28 @@ top: 45px;
   border-radius: 25px;
   height: 40px;
   width: 150px;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
+  transition: 1s;
 }
 .cform button:hover{
   box-shadow: 0 0 20px green;
   scale: 1.1;
   transition: .5s;
+  word-spacing: 20px;
   cursor: pointer;
 }
 
 
+.morebtn i{
+  color:black;
+}
+strong{
+  color: yellow;
+}
 
+button{
+  background-color: blueviolet;
+  display: none;
+}
