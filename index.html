@@ -28,7 +28,8 @@
             <!-- <a id="Theme" href="" onclick="darkmode()">Theme</a> -->
 
         </nav>
-        <button onclick="more()">MORE</button>
+       
+        <a href="#contact" id="more">CONTACT</a>
         <!-- <div class="progress-container">
           <div class="progress-bar" id="myBar"></div>
         </div> -->
@@ -43,11 +44,11 @@
             <h3>And I'm a <span id="element"></span></h3>
             <p>Glad to see you Here...! </p>
             <div class="homesci">
-              <a href="#"><i class='bx bxl-instagram'></i></a>
-              <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-              <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPFdXXHRzXGKfZtvvFNVSGtDdmTcqvMKZCGWXtjqLVsLpLGxBnqxzSdfzdsFVVLwnjSKZlW"><i class='bx bx-mail-send' ></i></a>
+              <a href="https://instagram.com/its_me_kk_yaadav?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class='bx bxl-instagram'></i></a>
+              <a href="https://www.linkedin.com/in/kailash-kumar-p-9930a2248"><i class='bx bxl-linkedin-square'></i></a>
+              <a href="mailto:kkyaadav786@gmail.com"><i class='bx bx-mail-send' ></i></a>
             </div>
-            <a href="index.html" class="morebtn">Download Resume <i class='bx bx-download' ></i></a>
+            <a href="" onclick="morebtn()" class="morebtn">Download Resume <i class='bx bx-download' ></i></a>
         </div>
        <div class="homephoto">
           <img src="kke.png" alt="">
@@ -176,11 +177,10 @@
 </div>
 </div>
   <script>
-    function more(){
-     classList.add("navbar");
+    function morebtn(){
+      alert("I'll be available soon..!!");
     }
-
-
+    
     var typed = new Typed('#element', {
       strings: ['Student','Developer','MLSA at Microsoft','Problem Solver'],
       typeSpeed:100,
