@@ -598,7 +598,17 @@ svg{
 .footercontent p{
   font-weight: 700;
 }
-
+#more{
+  background-color: #673ab7;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  padding: 5px;
+  width: 90px;
+  text-align: center;
+  display: none;
+  text-decoration: none;
+}
 
 @media only screen and (max-width:412px) {
  .about{
@@ -665,9 +675,10 @@ svg{
   height: 800px !important;
 
 }
-button{
+#more{
   display: block;
 }
+
 
 }
 
@@ -782,7 +793,5 @@ strong{
   color: yellow;
 }
 
-button{
-  background-color: blueviolet;
-  display: none;
-}
+
+
